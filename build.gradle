@@ -179,6 +179,14 @@ publishing {
             password = System.getenv("password")
             }
         }
+        maven {
+      name = "GitHubPackages"
+      url = "https://maven.pkg.github.com/adrikikicp/Create__The_Factory_Must_Grow"
+      credentials {
+        username = System.getenv("GITHUB_ACTOR")
+        password = System.getenv("GITHUB_TOKEN")
+      }
+    }
     }
 }
 
